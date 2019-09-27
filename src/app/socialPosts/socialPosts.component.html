@@ -1,0 +1,11 @@
+<h1>{{ title }}</h1>
+
+<div id="socialPosts">
+  <button type="button" *ngIf="openForm == false" (click) = "onNewPost()"> New Post</button>
+
+  <app-post-form *ngIf="openForm == true" (submitted) = "onSubmit($event)"></app-post-form>
+
+  <div *ngFor="let post of posts.slice().reverse(); index as i" id="displayPosts">
+    <app-post [post]="post"></app-post>
+  </div>
+</div>

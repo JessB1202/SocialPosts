@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+
+#socialPosts {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+  height: 80%;
+  background-color: lightslategray;
+  padding: 20px;
+  border: solid;
+}
+
+button {
+  width: 80%;
+  margin: auto;
+}

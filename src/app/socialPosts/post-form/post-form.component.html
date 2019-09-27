@@ -1,0 +1,9 @@
+<form>
+
+  Title: <input type="text" name="postSubject" [(ngModel)]="newSubject">
+
+  Thoughts: <textarea type="text" name="postBody" id="postBody" [(ngModel)]="newBody"> </textarea>
+  
+  <button type="button"(click)="submitPost()">Add Post</button>  
+
+</form>
